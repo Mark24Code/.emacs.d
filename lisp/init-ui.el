@@ -14,10 +14,10 @@
 ;; (use-package smart-mode-line-powerline-theme)
 
 ;; Settings for UI theme
-(use-package solarized-theme
-  :unless *is-windows*
-  :when (display-graphic-p)
-  :init (load-theme 'solarized-dark t))
+;; (use-package solarized-theme
+;;   :unless *is-windows*
+;;   :when (display-graphic-p)
+;;   :init (load-theme 'solarized-dark t))
 
 (use-package smart-mode-line
   :init
@@ -33,8 +33,8 @@
   :when (display-graphic-p)
   :config
   (set-default 'cursor-type 'bar)
-  ;; (setq default-frame-alist '((width . 150) (height . 35)))
-  (set-frame-parameter nil 'fullscreen 'maximized)
+  (setq default-frame-alist '((width . 150) (height . 35)))
+  ;; (set-frame-parameter nil 'fullscreen 'maximized)
 
   (when *is-windows*
     (set-face-attribute 'default nil :font "Microsoft Yahei Mono 10")
